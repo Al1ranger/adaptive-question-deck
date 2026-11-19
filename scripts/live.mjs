@@ -9,7 +9,7 @@ const code = 'contracts/AdaptiveQuestionDeck.py';
 const verifyOnly = process.argv.includes('--verify-only');
 const proof = fs.existsSync(journal)
   ? JSON.parse(fs.readFileSync(journal, 'utf8'))
-  : {network: 'StudioNet', transactions: [], snapshots: []};
+  : {network: 'StudioNet', source_commit: process.env.GITHUB_SHA ?? null, transactions: [], snapshots: []};
 const save = () => fs.writeFileSync(journal, JSON.stringify(proof, null, 2) + '\n');
 assert.equal(await rpc('eth_chainId', []), '0xf22f');
 assert.equal(studionet.id, 61999);

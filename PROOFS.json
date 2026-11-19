@@ -1,0 +1,497 @@
+{
+  "network": "StudioNet",
+  "transactions": [
+    {
+      "step": "deploy",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x0",
+      "functionName": "deploy",
+      "args": [],
+      "hash": "0xe56cf7cf59020659c55602eac62ef17598056d8b3de57000e2e8c2dfc903c454",
+      "receipt": {
+        "hash": "0xe56cf7cf59020659c55602eac62ef17598056d8b3de57000e2e8c2dfc903c454",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "open",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x1",
+      "functionName": "open_session",
+      "args": [
+        "containers",
+        "[\"Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.\",\"Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.\",\"Insulated ceramic mug holding 300 ml, with an open top. It has a handle.\",\"Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle.\"]"
+      ],
+      "hash": "0xa9782c52d0827565c99d5cc53e4bffaa3c8a22fb002cbe3cfc89ad3caf8ef948",
+      "receipt": {
+        "hash": "0xa9782c52d0827565c99d5cc53e4bffaa3c8a22fb002cbe3cfc89ad3caf8ef948",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "duplicate-session",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x2",
+      "functionName": "open_session",
+      "args": [
+        "containers",
+        "[\"Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.\",\"Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.\",\"Insulated ceramic mug holding 300 ml, with an open top. It has a handle.\",\"Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle.\"]"
+      ],
+      "error": "Session nonce already used",
+      "hash": "0x5e2302affc8d25c7bcb97072a642e0a4606429e91c20b3dbeceac83624883406",
+      "receipt": {
+        "hash": "0x5e2302affc8d25c7bcb97072a642e0a4606429e91c20b3dbeceac83624883406",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "ask-0",
+      "signer": "0xEA21eF0f94e05667a4A59Dc2bE420c94c366d952",
+      "nonce": "0x0",
+      "functionName": "ask",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        0
+      ],
+      "hash": "0xa090b00a9a4cc95687fa6f4a454f1b807e5f37a3c90f26ae8763b73dd2e154aa",
+      "receipt": {
+        "hash": "0xa090b00a9a4cc95687fa6f4a454f1b807e5f37a3c90f26ae8763b73dd2e154aa",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 1,
+        "disagree_votes": 1,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "peer-answer-denied",
+      "signer": "0xEA21eF0f94e05667a4A59Dc2bE420c94c366d952",
+      "nonce": "0x1",
+      "functionName": "answer",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+        "Y"
+      ],
+      "error": "Only the session creator can answer",
+      "hash": "0x1dbe704f7f75d0f2377739321d3442fb892a073693c62c9dfcf26577ffe7a8a5",
+      "receipt": {
+        "hash": "0x1dbe704f7f75d0f2377739321d3442fb892a073693c62c9dfcf26577ffe7a8a5",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "pending-question-denied",
+      "signer": "0xEA21eF0f94e05667a4A59Dc2bE420c94c366d952",
+      "nonce": "0x2",
+      "functionName": "ask",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        0
+      ],
+      "error": "Round is stale or a question is pending",
+      "hash": "0xcf71693b3c49841b963fd84bc05aa2e391ccbe9f7beb769936928f2fda3f28dd",
+      "receipt": {
+        "hash": "0xcf71693b3c49841b963fd84bc05aa2e391ccbe9f7beb769936928f2fda3f28dd",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "answer-0",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x3",
+      "functionName": "answer",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+        "Y"
+      ],
+      "hash": "0x4e82799d6be5193458bd68097469c6b856e5ef024593ab0f9968b57bc0a67809",
+      "receipt": {
+        "hash": "0x4e82799d6be5193458bd68097469c6b856e5ef024593ab0f9968b57bc0a67809",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "ask-1",
+      "signer": "0xEA21eF0f94e05667a4A59Dc2bE420c94c366d952",
+      "nonce": "0x3",
+      "functionName": "ask",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        1
+      ],
+      "hash": "0xf04a35dedebdf29e9bb0929892feaa3e0885770b4a66e0fbcc606113f5d4630c",
+      "receipt": {
+        "hash": "0xf04a35dedebdf29e9bb0929892feaa3e0885770b4a66e0fbcc606113f5d4630c",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "answer-1",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x4",
+      "functionName": "answer",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        "3571fbfa836b704fb46f339df57bbc4176b5bf1c3ed929e37a4e284993d75ee7",
+        "N"
+      ],
+      "hash": "0x320c3e116df2d14e442db364b29b91e035fdd407dd866a16acd8db6d1f23c6f7",
+      "receipt": {
+        "hash": "0x320c3e116df2d14e442db364b29b91e035fdd407dd866a16acd8db6d1f23c6f7",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "SUCCESS",
+        "consensus": "MAJORITY_AGREE",
+        "committed": true,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 4,
+        "idle_votes": 1,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    },
+    {
+      "step": "answer-replay-denied",
+      "signer": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+      "nonce": "0x5",
+      "functionName": "answer",
+      "args": [
+        "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+        "3571fbfa836b704fb46f339df57bbc4176b5bf1c3ed929e37a4e284993d75ee7",
+        "N"
+      ],
+      "error": "No matching pending question",
+      "hash": "0x5429b0e2178282587b0876e731bdbb7be59a79e84f19cf28a7ba4059a40ca922",
+      "receipt": {
+        "hash": "0x5429b0e2178282587b0876e731bdbb7be59a79e84f19cf28a7ba4059a40ca922",
+        "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+        "status": "FINALIZED",
+        "execution": "ERROR",
+        "consensus": "MAJORITY_AGREE",
+        "expected_error_matched": true,
+        "committed": false,
+        "leader_only": false,
+        "initial_validators": 5,
+        "agree_votes": 3,
+        "idle_votes": 2,
+        "disagree_votes": 0,
+        "validator_execution_seen": true
+      }
+    }
+  ],
+  "snapshots": [
+    {
+      "step": "ask-0",
+      "state": {
+        "alive": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+        "history": [],
+        "options": [
+          "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+          "Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.",
+          "Insulated ceramic mug holding 300 ml, with an open top. It has a handle.",
+          "Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle."
+        ],
+        "pending": {
+          "alive": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "binding": "c9dec1a9314d7a4b413f4b8efbe51480bab30c5b868f50992eab294df42caebd",
+          "id": "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+          "labels": "YNYN",
+          "question": "Is it insulated?",
+          "round": 0
+        }
+      }
+    },
+    {
+      "step": "answer-0",
+      "state": {
+        "alive": [
+          0,
+          2
+        ],
+        "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+        "history": [
+          {
+            "after": [
+              0,
+              2
+            ],
+            "alive": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "answer": "Y",
+            "binding": "c9dec1a9314d7a4b413f4b8efbe51480bab30c5b868f50992eab294df42caebd",
+            "id": "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+            "labels": "YNYN",
+            "question": "Is it insulated?",
+            "round": 0
+          }
+        ],
+        "options": [
+          "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+          "Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.",
+          "Insulated ceramic mug holding 300 ml, with an open top. It has a handle.",
+          "Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle."
+        ],
+        "pending": null
+      }
+    },
+    {
+      "step": "ask-1",
+      "state": {
+        "alive": [
+          0,
+          2
+        ],
+        "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+        "history": [
+          {
+            "after": [
+              0,
+              2
+            ],
+            "alive": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "answer": "Y",
+            "binding": "c9dec1a9314d7a4b413f4b8efbe51480bab30c5b868f50992eab294df42caebd",
+            "id": "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+            "labels": "YNYN",
+            "question": "Is it insulated?",
+            "round": 0
+          }
+        ],
+        "options": [
+          "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+          "Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.",
+          "Insulated ceramic mug holding 300 ml, with an open top. It has a handle.",
+          "Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle."
+        ],
+        "pending": {
+          "alive": [
+            0,
+            2
+          ],
+          "binding": "0a9712d68ee95691b8a37db806ba407cf1c57fe4e91648f607a954438215523d",
+          "id": "3571fbfa836b704fb46f339df57bbc4176b5bf1c3ed929e37a4e284993d75ee7",
+          "labels": "NY",
+          "question": "Does it have a handle?",
+          "round": 1
+        }
+      }
+    },
+    {
+      "step": "answer-1",
+      "state": {
+        "alive": [
+          0
+        ],
+        "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+        "history": [
+          {
+            "after": [
+              0,
+              2
+            ],
+            "alive": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "answer": "Y",
+            "binding": "c9dec1a9314d7a4b413f4b8efbe51480bab30c5b868f50992eab294df42caebd",
+            "id": "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+            "labels": "YNYN",
+            "question": "Is it insulated?",
+            "round": 0
+          },
+          {
+            "after": [
+              0
+            ],
+            "alive": [
+              0,
+              2
+            ],
+            "answer": "N",
+            "binding": "0a9712d68ee95691b8a37db806ba407cf1c57fe4e91648f607a954438215523d",
+            "id": "3571fbfa836b704fb46f339df57bbc4176b5bf1c3ed929e37a4e284993d75ee7",
+            "labels": "NY",
+            "question": "Does it have a handle?",
+            "round": 1
+          }
+        ],
+        "options": [
+          "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+          "Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.",
+          "Insulated ceramic mug holding 300 ml, with an open top. It has a handle.",
+          "Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle."
+        ],
+        "pending": null
+      }
+    }
+  ],
+  "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+  "peer": "0xEA21eF0f94e05667a4A59Dc2bE420c94c366d952",
+  "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+  "source": {
+    "address": "0x50bfd7135738Cea7eFef3cC5925B96d7873F6e3c",
+    "source_match": true,
+    "sha256": "2edeb1b98a57d7b80d8d0c9c01b8551c3ff71b6f383db4b2c19e528b737cc010"
+  },
+  "session": "37dcfd51ab1ab411a829d7025cc522cd877889f2bb18ef3e928ca52a5d829d02",
+  "final": {
+    "alive": [
+      0
+    ],
+    "creator": "0xe8125d0536b1acfAEF8798c8D9886970D2E30FC4",
+    "history": [
+      {
+        "after": [
+          0,
+          2
+        ],
+        "alive": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "answer": "Y",
+        "binding": "c9dec1a9314d7a4b413f4b8efbe51480bab30c5b868f50992eab294df42caebd",
+        "id": "ac2761efa912a4cece961af83ecc994039445639160e5546dfbd8830cacf75cc",
+        "labels": "YNYN",
+        "question": "Is it insulated?",
+        "round": 0
+      },
+      {
+        "after": [
+          0
+        ],
+        "alive": [
+          0,
+          2
+        ],
+        "answer": "N",
+        "binding": "0a9712d68ee95691b8a37db806ba407cf1c57fe4e91648f607a954438215523d",
+        "id": "3571fbfa836b704fb46f339df57bbc4176b5bf1c3ed929e37a4e284993d75ee7",
+        "labels": "NY",
+        "question": "Does it have a handle?",
+        "round": 1
+      }
+    ],
+    "options": [
+      "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+      "Uninsulated stainless steel cup holding 500 ml, with an open top. It has a handle.",
+      "Insulated ceramic mug holding 300 ml, with an open top. It has a handle.",
+      "Uninsulated ceramic jar holding 300 ml, with a screw cap. It has no handle."
+    ],
+    "pending": null
+  },
+  "selection": {
+    "description": "Insulated stainless steel bottle holding 500 ml, with a screw cap. It has no handle.",
+    "index": 0
+  },
+  "verified": true,
+  "source_commit": "50b8ce91a75bf7e8723ba8c7f58b3541baf27d21",
+  "hosted_run": "https://github.com/Al1ranger/adaptive-question-deck/actions/runs/44468850837"
+}

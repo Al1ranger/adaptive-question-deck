@@ -46,3 +46,13 @@ python -m pip install -r requirements-dev.txt
 genvm-lint check contracts/AdaptiveQuestionDeck.py
 python -m pytest tests -q
 ```
+
+[Live proof ledger](LIVE_PROOFS.md) · [Submission text](SUBMISSION.md)
+
+The gasless demonstration used two temporary accounts on a GitHub-hosted
+runner. Replay the recorded receipt and final-state checks with read-only RPC.
+
+```sh
+npm ci --ignore-scripts
+node scripts/live.mjs --verify-only
+```
