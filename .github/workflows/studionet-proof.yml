@@ -1,0 +1,30 @@
+name: Deploy and verify AdaptiveQuestionDeck
+on:
+  push:
+    branches:
+      - studio-proof-run
+
+permissions:
+  contents: read
+
+concurrency:
+  group: adaptive-question-deck-studionet
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 18
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - run: npm ci --ignore-scripts
+      - name: Deploy and complete a session
+        run: node scripts/live.mjs
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: studionet-receipts
+          path: PROOFS.json
